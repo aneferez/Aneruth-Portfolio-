@@ -1,0 +1,15 @@
+@import "tailwindcss";
+html {
+  scroll-behavior: smooth;
+}
+
+/* Optional: Better text rendering */
+body {
+  @apply antialiased;
+}
+/* Subtle selection styling */
+::selection {
+  background: #a855f7;
+  color: white;
+}
+@custom-variant dark (&:where(.dark, .dark *))
